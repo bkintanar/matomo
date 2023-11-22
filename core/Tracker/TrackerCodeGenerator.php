@@ -296,6 +296,10 @@ class TrackerCodeGenerator
         }
         $options = '';
         if ($mergeSubdomains && !empty($firstHost)) {
+            if (strpos($firstHost, 'www.' ) !== false) {
+                $firstHost = str_replace('www.', '', $firstHost);
+            }
+
             $options .= '  _paq.push(["setCookieDomain", "*.' . $firstHost . '"]);' . "\n";
         }
         if ($mergeAliasUrls && !empty($websiteHosts)) {
