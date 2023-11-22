@@ -1,0 +1,7 @@
+{
+    "Timezone": {
+        "Currentlocaltimeinwebsitestimezone": "Current local time in websites timezone",
+        "LocalTimezone": "Local timezone",
+        "SiteTimezone": "Site timezone"
+    }
+}
